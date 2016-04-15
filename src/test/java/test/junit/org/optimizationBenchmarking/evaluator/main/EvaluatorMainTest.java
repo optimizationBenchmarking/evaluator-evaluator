@@ -23,7 +23,7 @@ import org.optimizationBenchmarking.utils.text.TextUtils;
 public class EvaluatorMainTest {
 
   /** create */
-  protected EvaluatorMainTest() {
+  public EvaluatorMainTest() {
     super();
   }
 
