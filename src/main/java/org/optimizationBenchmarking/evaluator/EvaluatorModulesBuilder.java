@@ -6,10 +6,11 @@ import org.optimizationBenchmarking.evaluator.evaluation.spec.IEvaluationModule;
 import org.optimizationBenchmarking.utils.hierarchy.HierarchicalFSM;
 
 /** The builder for evaluation setups. */
-final class _EvaluationModulesBuilder extends EvaluationModulesBuilder {
+public final class EvaluatorModulesBuilder
+    extends EvaluationModulesBuilder {
 
   /** create the modules builder */
-  _EvaluationModulesBuilder() {
+  public EvaluatorModulesBuilder() {
     this(null);
   }
 
@@ -19,7 +20,7 @@ final class _EvaluationModulesBuilder extends EvaluationModulesBuilder {
    * @param owner
    *          the owning FSM, or {@code null} if none was specified
    */
-  _EvaluationModulesBuilder(final HierarchicalFSM owner) {
+  public EvaluatorModulesBuilder(final HierarchicalFSM owner) {
     super(owner);
   }
 

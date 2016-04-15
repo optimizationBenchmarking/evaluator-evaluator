@@ -245,7 +245,7 @@ final class _Evaluation extends _EvaluationSetup
       }
 
       try (
-          final EvaluationModulesBuilder builder = new _EvaluationModulesBuilder()) {
+          final EvaluationModulesBuilder builder = new EvaluatorModulesBuilder()) {
 
         if (config != null) {
           builder.setRootConfiguration(config);
