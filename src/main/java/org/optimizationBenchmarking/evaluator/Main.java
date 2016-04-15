@@ -18,12 +18,35 @@ public final class Main {
   public static final String PARAM_QUIET = "quiet"; //$NON-NLS-1$
 
   /**
-   * The main method.
+   * The main method, explicitly invoking
+   * {@link java.lang.System#exit(int)} to shutdown the program.
    *
    * @param args
    *          the command line arguments
    */
   public static final void main(final String[] args) {
+    System.exit(Main.run(args));
+  }
+
+  /**
+   * The main method.
+   * <p>
+   * Warning: Some graphics or chart drivers may cause the creation of a
+   * java AWT event queue thread ( {@code java.awt.EventDispatchThread}).
+   * Oddly enough, even if all necessary conditions (see
+   * {@code sun.awt.AWTAutoShutDown.isReadyToShutdown()}) are fulfilled,
+   * this thread does not seem to terminate in my setups. Since it is not a
+   * <em>demon</em>, this will stop the application from terminating after
+   * returning from {@code run}. We therefore will have to invoke
+   * {@link java.lang.System#exit(int)} explicitly.
+   * </p>
+   *
+   * @param args
+   *          the command line arguments
+   * @return the return value, {@code 0} on success, a non-zero value on
+   *         failure
+   */
+  public static final int run(final String[] args) {
     final Runnable evaluation;
     final int processors;
     final Logger logger;
@@ -32,7 +55,9 @@ public final class Main {
     Configuration config;
     Evaluator evaluator;
     IEvaluationBuilder builder;
-    int terminated;
+    int terminated, returnValue;
+
+    returnValue = 0;
 
     Configuration.setup(args);
     config = Configuration.getRoot();
@@ -55,8 +80,7 @@ public final class Main {
           if (logger.isLoggable(Level.CONFIG)) {
             logger.config(//
                 "The root configuration provided via the command line is " //$NON-NLS-1$
-                    +
-                    config.toString());
+                    + config.toString());
           }
         }
       }
@@ -93,8 +117,7 @@ public final class Main {
         if ((logger != null) && (logger.isLoggable(Level.INFO))) {
           logger.info(//
               "Begin executing the evaluation job in the current thread, '" //$NON-NLS-1$
-                  +
-                  Thread.currentThread() + //
+                  + Thread.currentThread() + //
                   "', i.e., on one processor."); //$NON-NLS-1$
         }
 
@@ -164,6 +187,7 @@ public final class Main {
         }
       }
     } catch (final Throwable error) {
+      returnValue = 1;
       if ((logger != null) && (logger.isLoggable(Level.SEVERE))) {
         logger.log(Level.SEVERE,
             "An unrecoverable error has been detected.", //$NON-NLS-1$
@@ -176,6 +200,8 @@ public final class Main {
     if (printInfo) {
       new __End(logger).run();
     }
+
+    return returnValue;
   }
 
   /**
