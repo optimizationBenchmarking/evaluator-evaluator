@@ -1,6 +1,6 @@
 <project basedir="." default="build">
 	<description>
-	Build the Optimization Benchmarkin Evaluator.
+	Build the Optimization Benchmarking Evaluator.
 	</description>
 
 	<import>
@@ -12,13 +12,9 @@
 			<buildWithDependencies githubProject="evaluator-evaluator">
 				<dependencies>
 				  <dependency githubProject="evaluator-modules" />
-				  <dependency githubProject="evaluator-attributes" />
 					<dependency githubProject="evaluator-base" />
 					<dependency githubProject="utils-base" />
-					<dependency githubProject="utils-math" />
-					<dependency githubProject="utils-ml" />
 					<dependency githubProject="utils-documents" />
-  				<dependency githubProject="utils-charts" />
 				</dependencies>
 			</buildWithDependencies>
 		</sequential>

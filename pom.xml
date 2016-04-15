@@ -45,12 +45,8 @@
 		<jdk.version>1.7</jdk.version>
 		<junit.version>4.11</junit.version>
 		<utils-base.version>${project.version}</utils-base.version>
-		<utils-math.version>${utils-base.version}</utils-math.version>
-		<utils-ml.version>${utils-base.version}</utils-ml.version>
-		<utils-charts.version>${utils-base.version}</utils-charts.version>
 		<utils-documents.version>${utils-base.version}</utils-documents.version>
 		<evaluator-base.version>${project.version}</evaluator-base.version>
-		<evaluator-attributes.version>${evaluator-base.version}</evaluator-attributes.version>
 		<evaluator-modules.version>${evaluator-base.version}</evaluator-modules.version>
 	</properties>
 
@@ -63,14 +59,14 @@
 	</licenses>
 
 	<issueManagement>
-		<url>https://github.com/optimizationBenchmarking/evaluator-modules/issues</url>
+		<url>https://github.com/optimizationBenchmarking/evaluator-evaluator/issues</url>
 		<system>GitHub</system>
 	</issueManagement>
 
 	<scm>
-		<connection>scm:git:git@github.com:optimizationBenchmarking/evaluator-modules.git</connection>
-		<developerConnection>scm:git:git@github.com:optimizationBenchmarking/evaluator-modules.git</developerConnection>
-		<url>git@github.com:optimizationBenchmarking/evaluator-modules.git</url>
+		<connection>scm:git:git@github.com:optimizationBenchmarking/evaluator-evaluator.git</connection>
+		<developerConnection>scm:git:git@github.com:optimizationBenchmarking/evaluator-evaluator.git</developerConnection>
+		<url>git@github.com:optimizationBenchmarking/evaluator-evaluator.git</url>
 	</scm>
 
 	<inceptionYear>2014</inceptionYear>
@@ -100,24 +96,6 @@
 
 		<dependency>
 			<groupId>org.optimizationBenchmarking</groupId>
-			<artifactId>utils-math</artifactId>
-			<version>${utils-math.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.optimizationBenchmarking</groupId>
-			<artifactId>utils-ml</artifactId>
-			<version>${utils-ml.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.optimizationBenchmarking</groupId>
-			<artifactId>utils-charts</artifactId>
-			<version>${utils-charts.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.optimizationBenchmarking</groupId>
 			<artifactId>utils-documents</artifactId>
 			<version>${utils-documents.version}</version>
 		</dependency>
@@ -134,12 +112,6 @@
 			<groupId>org.optimizationBenchmarking</groupId>
 			<artifactId>evaluator-base</artifactId>
 			<version>${evaluator-base.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.optimizationBenchmarking</groupId>
-			<artifactId>evaluator-attributes</artifactId>
-			<version>${evaluator-attributes.version}</version>
 		</dependency>
 
 		<dependency>

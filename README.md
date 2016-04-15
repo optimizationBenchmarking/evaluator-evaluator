@@ -10,5 +10,4 @@
 [<img alt="AppVeyor Build Status" src="https://img.shields.io/appveyor/ci/thomasWeise/evaluator-evaluator.svg" height="20"/>](https://ci.appveyor.com/project/thomasWeise/evaluator-evaluator)
 [<img alt="Drone IO Build Status" src="https://drone.io/github.com/optimizationBenchmarking/evaluator-evaluator/status.png" height="20"/>](https://drone.io/github.com/optimizationBenchmarking/evaluator-evaluator/latest)
 
-
-This library provides the evaluator of the [optimizationBenchmarking](http://www.github.com/optimizationBenchmarking/) tool suite. Details about the licensing of this project and the projects it depends on are given in [LICENSE.md](https://github.com/optimizationBenchmarking/evaluator-modules/blob/master/LICENSE.md).
+This project provides the evaluator program (and component) of the [optimizationBenchmarking](http://www.github.com/optimizationBenchmarking/) tool suite. Details about the licensing of this project and the projects it depends on are given in [LICENSE.md](https://github.com/optimizationBenchmarking/evaluator-evaluator/blob/master/LICENSE.md).
