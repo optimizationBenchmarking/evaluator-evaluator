@@ -5,8 +5,8 @@
 
 	<cd:instance name="inputDriver"
 		description="The way in which the input data, i.e., the experimental results, are stored."
-		class="org.optimizationBenchmarking.experimentation.io.spec.IExperimentSetInput"
-		parser="org.optimizationBenchmarking.experimentation.io.impl.ExperimentSetInputParser"
+		class="org.optimizationBenchmarking.evaluator.io.spec.IExperimentSetInput"
+		parser="org.optimizationBenchmarking.evaluator.io.impl.ExperimentSetInputParser"
 		default="csv+edi" allowsMore="true">
 		<cd:choice name="csv+edi"
 			description="The experimental results are stored as CSV (comma separated values) files, which are simple text files with one line per log point. The meta-data (such as instances, dimensions, and experiment parameters) are stored in our 'EDI' format." />
