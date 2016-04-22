@@ -157,8 +157,10 @@ public class EvaluatorMainTest {
 
                     if (endIndex > startIndex) {
                       line = line.substring(0, startIndex) + //
-                          PathUtils.normalize(resolveAgainst.resolve(//
-                              line.substring(startIndex, endIndex)))
+                          PathUtils.getPhysicalPath(//
+                              resolveAgainst.resolve(//
+                                  line.substring(startIndex, endIndex)),
+                              true)
                           + //
                           line.substring(endIndex);
                     }
