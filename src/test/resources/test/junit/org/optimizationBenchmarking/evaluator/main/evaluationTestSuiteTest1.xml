@@ -48,7 +48,7 @@
 			<cfg:parameter name="yAxis" value="F" />
 			<cfg:parameter name="aggregate" value="median" />
 			<cfg:parameter name="groupBy" value="n" />
-			<cfg:parameter name="maxY" value="0.05" />
+			<cfg:parameter name="maxY" value="0.1" />
       <cfg:parameter name="grouping" value="instances by feature values" />
 			<cfg:parameter name="groupBy" value="n" />
       <cfg:parameter name="nGrouping" value="4 to 10 powers" />
