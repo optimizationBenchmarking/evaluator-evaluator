@@ -507,9 +507,9 @@ final class _Evaluation extends _EvaluationSetup
       if (i > 1) {
         message.append(" There are ");//$NON-NLS-1$
         message.append(i);
-        message.append(" benchmark instances with ");//$NON-NLS-1$
+        message.append(" benchmark instances: ");//$NON-NLS-1$
       } else {
-        message.append("There is one benchmark instance with ");//$NON-NLS-1$
+        message.append("There is one benchmark instance: ");//$NON-NLS-1$
       }
     }
 
