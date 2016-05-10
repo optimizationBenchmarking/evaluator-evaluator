@@ -275,7 +275,7 @@
 						<configuration>
 							<finalName>evaluator</finalName>
 							<shadedArtifactId>evaluator</shadedArtifactId>
-							<shadedClassifierName/>
+							<shadedClassifierName />
 							<createSourcesJar>true</createSourcesJar>
 							<shadeTestJar>true</shadeTestJar>
 							<minimizeJar>false</minimizeJar>
@@ -292,7 +292,6 @@
 									</excludes>
 								</filter>
 							</filters>
-
 
 							<transformers>
 								<transformer
