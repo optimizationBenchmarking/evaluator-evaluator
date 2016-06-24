@@ -732,7 +732,7 @@ final class _Evaluation extends _EvaluationSetup
     }
 
     summary.append(//
-        ". This report has been generated with the "); //$NON-NLS-1$
+        ". This report has been generated with "); //$NON-NLS-1$
     Evaluator.getInstance()._printInfo(summary);
     summary.append('.');
 

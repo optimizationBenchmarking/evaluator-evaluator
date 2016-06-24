@@ -6,7 +6,7 @@
 	<artifactId>evaluator-evaluator</artifactId>
 	<version>0.8.6</version>
 	<packaging>jar</packaging>
-	<name>The evaluator main component.</name>
+	<name>evaluator component</name>
 	<description>The optimizationBenchmarking.org evaluator.</description>
 
 	<parent>
