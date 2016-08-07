@@ -379,7 +379,7 @@ class _EvaluationSetup {
     throw new IllegalArgumentException((((//
     "Module type " + type) + //$NON-NLS-1$
         " not supported for module class ")//$NON-NLS-1$
-        + TextUtils.className(module.getClass())) + '.');
+        + TextUtils.className(module)) + '.');
   }
 
   /**

@@ -168,6 +168,6 @@ class _PseudoJob implements IEvaluationJob {
   /** {@inheritDoc} */
   @Override
   public String toString() {
-    return TextUtils.className(this.getClass());
+    return TextUtils.className(this);
   }
 }

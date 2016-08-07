@@ -37,7 +37,7 @@ final class _JobWrapper extends _PseudoJob {
   @Override
   final String _getName() {
     return ("Job " + //$NON-NLS-1$
-        TextUtils.className(this.m_job.getClass()));
+        TextUtils.className(this.m_job));
   }
 
   /** {@inheritDoc} */
@@ -76,7 +76,7 @@ final class _JobWrapper extends _PseudoJob {
   /** {@inheritDoc} */
   @Override
   public final String toString() {
-    return (TextUtils.className(this.m_job.getClass()) + " (" + //$NON-NLS-1$
+    return (TextUtils.className(this.m_job) + " (" + //$NON-NLS-1$
         this.m_job.toString() + ')');
   }
 }

@@ -4,7 +4,7 @@
 
 	<groupId>org.optimizationBenchmarking</groupId>
 	<artifactId>evaluator-evaluator</artifactId>
-	<version>0.8.7</version>
+	<version>0.8.8</version>
 	<packaging>jar</packaging>
 	<name>evaluator component</name>
 	<description>The optimizationBenchmarking.org evaluator.</description>
