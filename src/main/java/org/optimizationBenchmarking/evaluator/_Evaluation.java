@@ -32,7 +32,7 @@ import org.optimizationBenchmarking.utils.bibliography.data.BibDateBuilder;
 import org.optimizationBenchmarking.utils.collections.lists.ArrayListView;
 import org.optimizationBenchmarking.utils.config.Configuration;
 import org.optimizationBenchmarking.utils.document.impl.DocumentDriverParser;
-import org.optimizationBenchmarking.utils.document.impl.SemanticComponentUtils;
+import org.optimizationBenchmarking.utils.document.impl.SemanticComponentSequenceable;
 import org.optimizationBenchmarking.utils.document.spec.IDocument;
 import org.optimizationBenchmarking.utils.document.spec.IDocumentBody;
 import org.optimizationBenchmarking.utils.document.spec.IDocumentBuilder;
@@ -717,8 +717,10 @@ final class _Evaluation extends _EvaluationSetup
       }
 
       summary.append(", namely "); //$NON-NLS-1$
-      SemanticComponentUtils.printNames(ESequenceMode.AND, experiments,
-          true, false, ETextCase.IN_SENTENCE, summary);
+      ESequenceMode.AND.appendSequence(ETextCase.IN_SENTENCE,
+          SemanticComponentSequenceable.wrap(experiments, true, false,
+              false),
+          summary);
     }
 
     summary.append(" on "); //$NON-NLS-1$
