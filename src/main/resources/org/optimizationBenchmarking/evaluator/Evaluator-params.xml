@@ -50,6 +50,8 @@
 			description="The document class used by Springer conferences which publish their proceedings in Lecture Notes in Computer Science (LNCS) series or that alike." />
 		<cd:choice name="sig-alternate"
 			description="The document class used by ACM, at conferences like GECCO." />
+    <cd:choice name="elsarticle"
+      description="The document class used by Elsevier journals. Warning: Since Elsevier uses non-free fonts in the final article versions, the fonts used in the figures may not match those used in the final text." />
 	</cd:instance>
 
 	<cd:instance name="graphicDriver"
