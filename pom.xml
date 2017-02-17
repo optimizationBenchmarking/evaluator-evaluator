@@ -4,7 +4,7 @@
 
 	<groupId>org.optimizationBenchmarking</groupId>
 	<artifactId>evaluator-evaluator</artifactId>
-	<version>0.8.8</version>
+	<version>0.8.9</version>
 	<packaging>jar</packaging>
 	<name>evaluator component</name>
 	<description>The optimizationBenchmarking.org evaluator.</description>
@@ -44,10 +44,10 @@
 		<project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
 		<jdk.version>1.7</jdk.version>
 		<junit.version>4.11</junit.version>
-		<utils-base.version>${project.version}</utils-base.version>
-		<utils-documents.version>${utils-base.version}</utils-documents.version>
-		<evaluator-base.version>${project.version}</evaluator-base.version>
-		<evaluator-modules.version>${evaluator-base.version}</evaluator-modules.version>
+		<utils-base.version>0.8.8</utils-base.version>
+		<utils-documents.version>0.8.8</utils-documents.version>
+		<evaluator-base.version>0.8.8</evaluator-base.version>
+		<evaluator-modules.version>0.8.8</evaluator-modules.version>
 	</properties>
 
 	<licenses>
